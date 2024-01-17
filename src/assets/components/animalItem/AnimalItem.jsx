@@ -1,17 +1,18 @@
 import './animalitem.css'
-const AnimalItem = (animal) => {
+const AnimalItem = ({emoji, name, species, habitat, diet,lifespan,funFacts}) => {
     return ( 
         <>
         <div id="animal-item">
             <div id="animal-info">
-            <h2 id="emoji">{animal.emoji}</h2>
-            <h2>{animal.name}</h2>
-            <h3>{animal.species}</h3>
-            <h3>{animal.diet}</h3>
-            <h4>{animal.lifespan} years</h4>
+            <h2 id="emoji">{emoji}</h2>
+            <h2>{name}</h2>
+            <h3>{species}</h3>
+            <h3>{habitat}</h3>
+            <h3>{diet}</h3>
+            <h4>{lifespan} years</h4>
             </div>
             <div id="animal-funFacts">
-            {animal.funFacts.map((funFact =>
+            {funFacts.map((funFact =>
                 <li>{funFact}</li>
                 ))}
             </div>

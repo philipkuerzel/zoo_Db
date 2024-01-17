@@ -1,12 +1,16 @@
-import animals from "./assets/data/animals"
+import animals from './assets/data/animals'
 import './App.css'
-import Cards from './assets/components/animalList/AnimalList'
+import AnimalList from './assets/components/animalList/AnimalList'
 
 function App() {
 
   return (
     <>
-      <Cards animals={animals}/>
+    <h1>ZooParty DB</h1>
+    <h3>Explore the fascinating world of zoo animals!</h3>
+    <section id="animals">
+      <AnimalList animals={animals}/>
+    </section>
     </>
   )
 }
